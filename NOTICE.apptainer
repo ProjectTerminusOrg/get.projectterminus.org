@@ -1,0 +1,30 @@
+Apptainer 1.5.5 for Ubuntu 26.04, as mirrored by Terminus
+
+The artifact ghcr.io/projectterminusorg/terminus-node:apptainer-1.5.5-ubuntu-26.04 holds this notice and, unchanged,
+files made by the Apptainer project and published in the Apptainer PPA
+(https://launchpad.net/~apptainer/+archive/ubuntu/ppa):
+
+- apptainer_1.5.5-1~resolute_amd64.deb, the binary package. Terminus's install script installs it on Ubuntu 26.04
+  from the PPA, and takes this copy only when the download from the PPA fails (an HTTP error, no answer, a TLS
+  failure, a refused redirect or a partial transfer). A file that does not match its pinned SHA-256, from either
+  place, stops the script; it never falls back on a mismatch;
+- licences/: the package's licence files, as the package installs them under /usr/share/doc/apptainer/: copyright,
+  LICENSE.md.gz, LICENSE_DEPENDENCIES.md.gz and LICENSE_THIRD_PARTY.md.gz;
+- source/: the PPA's source package for the same version: apptainer_1.5.5-1~resolute.dsc,
+  apptainer_1.5.5-1~resolute.debian.tar.xz and apptainer_1.5.5.orig.tar.gz.
+
+Terminus did not write and does not change these files. Their licences are their authors':
+
+- Apptainer: the BSD 3-Clause licence and the LBNL BSD licence (Copyright (c) Contributors to the Apptainer project,
+  established as Apptainer a Series of LF Projects LLC; 2015-2017 Gregory M. Kurtzer; 2016-2017 The Regents of the
+  University of California; 2017 SingularityWare, LLC), with the parts that LICENSE_THIRD_PARTY.md.gz and
+  LICENSE_DEPENDENCIES.md.gz list under their own licences.
+- The helper programs the package carries in /usr/libexec/apptainer/, built from other projects whose source
+  tarballs are inside apptainer_1.5.5-1~resolute.debian.tar.xz, each with its own licence file. Among them,
+  fuse-overlayfs, PRoot, squashfs-tools (mksquashfs, unsquashfs) and e2fsprogs (fuse2fs) are under the GNU General
+  Public License, version 2 (fuse-overlayfs: version 2 or later); others are under permissive licences.
+
+The corresponding source of every program in the package is the source package above, in the same artifact. To read
+it: oras pull ghcr.io/projectterminusorg/terminus-node:apptainer-1.5.5-ubuntu-26.04
+
+This notice describes the files; it is not legal advice.
