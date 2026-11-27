@@ -6,6 +6,7 @@ compare that digest with this list, which does not come from any instance.
 
 | Version | SHA-256 of install.sh |
 | --- | --- |
+| 0.38.0 | `7c9d2704bff088975cba6f10039fe1bba9e72fb52a1c7ee4e340bb3ead369635` |
 | 0.35.4 | `7a14f3986431958dfed433c609cc00fe30c75c0670aafc0be8a4947cd852d6f9` |
 | 0.35.3 | `b04c372a973e93ad98f0a4dff50486daf4c6f24bdea943d6eb8365114f85c692` |
 | 0.35.1 | `ef43924a63717fa5ed78f84f0c615f9731c79f1264ef20edc4bd3aa2d2819edc` |
